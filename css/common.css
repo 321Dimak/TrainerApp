@@ -1,0 +1,18 @@
+:root {
+  background: #000000;
+}
+/* head color #b08968 */
+
+nav {
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 2px solid #c9ada7;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  overflow: hidden;
+  box-sizing: border-box;
+  /* SCSS for those who would like to try */
+}

@@ -1,0 +1,55 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+form {
+  max-width: 400px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+  background-color: #222;
+  color: white;
+  border: 1px solid #555;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+input[type="radio"] {
+  accent-color: white;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+textarea {
+  background-color: #222;
+  color: white;
+  border: 1px solid #555;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical; /* allows user to resize vertically */
+}
+
+textarea::placeholder {
+  color: #aaa;
+}

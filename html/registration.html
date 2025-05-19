@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/registration.css" />
+    <title>TrainerApp</title>
+  </head>
+  <body>
+    <h1>New User Registration</h1>
+    <form action="/register" method="POST">
+      <label>Gender:</label><br />
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br />
+
+      <input type="text" placeholder="Enter your first name" name="fname" />
+      <input type="text" placeholder="Enter your last name" name="lname" />
+      <input type="text" placeholder="Enter your email" name="email" />
+      <input
+        type="password"
+        placeholder="Enter your password"
+        name="password"
+      />
+      <input type="password" placeholder="Confirm your password" />
+      <input
+        type="text"
+        placeholder="Enter your phone number"
+        name="phoneNumber"
+      />
+      <label for="about"
+        >Tell us about yourself or your goals for training:</label
+      ><br />
+      <textarea
+        id="about"
+        name="about"
+        rows="10"
+        cols="30"
+        placeholder="Write here..."
+      ></textarea
+      ><br /><br />
+      <input type="number" placeholder="Enter your age" name="age" />
+
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
