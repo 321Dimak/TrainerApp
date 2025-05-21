@@ -7,63 +7,116 @@
     <title>TrainerApp</title>
   </head>
   <body>
-    <nav>
-      <div>
-        <select id="language" name="language">
-          <option value="lv">LV</option>
-          <option value="ru">RU</option>
-          <option value="en">EN</option>
-        </select>
-        <a href="login.html">LOGIN</a>
-        <a href="userForm.html">Change Your Life</a>
-        <!-- <ul> -->
-        <!-- <li> -->
-        <!-- <a class="nav-link" href="index.html"
-              ><img
-                src="../resources/homeLogoCrop.gif"
-                alt="Home"
-                class="nav-gif"
-            /></a> -->
-        <!-- </li>
-          <li><a class="nav-link" href="products.html">Products</a></li>
-          <li>
-            <a class="nav-link" href="login.html">LOGIN</a>
-          </li>
-          <li><a class="nav-link" href="signin.html">Change Your Life</a></li>
-        </ul> -->
+    <header>
+      <div class="language-switcher">
+        <button>LV</button>
+        <button>RU</button>
+        <button>EN</button>
       </div>
-    </nav>
-    <!-- <header>
-      <select id="language" name="language">
-        <option value="lv">LV</option>
-        <option value="ru">RU</option>
-        <option value="en">EN</option>
-      </select>
+      <div class="title">
+        <a href="index.html">IRINA KOZLOVA</a>
+      </div>
+      <div class="auth-buttons">
+        <button>LOGIN</button>
+        <button>REGISTER</button>
+      </div>
+    </header>
 
-      <a href="login.html">LOGIN</a>
-      <a href="userForm.html">REGISTER</a>
-    </header> -->
+    <section class="hero">
+      <div>
+        <h1>BE YOUR <span>BEST</span></h1>
+      </div>
+      <img
+        src="../resources/Irina1.jpg"
+        alt="Irina lifting weights"
+        width="500"
+      />
+    </section>
 
-    <div><h1>Welcome to Go Fit</h1></div>
+    <section class="about-irina">
+      <div class="irina-content">
+        <div class="irina-text">
+          <h2>Hi, I’m Irina — A Personal Fitness Coach</h2>
+          <p>
+            If you’re reading this, something inside you already wants change —
+            whether it’s to feel stronger, look better, have more energy, or
+            simply feel like yourself again. I don’t believe in extremes. I
+            believe in balance, consistency, and learning to enjoy movement.
+            Together, we’ll create a program that fits you — your goals, your
+            lifestyle, and your starting point.
+            <br /><br />
+            Whether you want to lose weight without strict diets, get fit for
+            summer (or for life), or just feel better in your body — I’m here to
+            help.
+          </p>
+          <a href="#offerings" class="learn-more">Learn More</a>
+        </div>
+        <div class="irina-images">
+          <img src="../resources/Irina2.jpg" alt="Irina side image" />
+          <img src="../resources/Irina3.jpg" alt="Irina lifting image" />
+        </div>
+      </div>
+    </section>
 
-    <p>Your fitness journey starts here!</p>
+    <section id="offerings">
+      <h2 class="section-title">What Do I Offer</h2>
+      <p>I am committed to bringing you the best workout experience.</p>
+      <div class="offerings">
+        <a href="offerings.html" class="card link-card">
+          <img src="../resources/IrinaLink1.jpg" alt="Personal Training" />
+          <h3>Personal Training</h3>
+        </a>
+        <a href="offerings.html" class="card link-card">
+          <img src="../resources/IrinaLink2.jpg" alt="Personal Programs" />
+          <h3>Personal Programs</h3>
+        </a>
+        <a href="offerings.html" class="card link-card">
+          <img src="../resources/IrinaLink3.jpg" alt="Nutrition" />
+          <h3>Nutrition</h3>
+        </a>
+      </div>
+    </section>
 
-    <div>
-      <table>
-        <caption></caption>
-        <thead></thead>
-        <tbody>
-          <tr>
-            <th>Exercise</th>
-            <th>Duration</th>
-            <th>Calories Burned</th>
-          </tr>
-        </tbody>
-        <tfoot></tfoot>
-      </table>
-    </div>
-    <footer>
-      <!-- Contacts -->
-    </footer>
+    <section>
+      <h2 class="section-title">Before and After</h2>
+      <div class="testimonials">
+        <div class="card testimonial-card">
+          <img src="../resources/homeLogoCrop.gif" alt="Client" />
+          <p>
+            "Reviews and feedback from happy clients are a great way to build
+            trust." <br /><i>Sanita, 31</i>
+          </p>
+        </div>
+        <div class="card testimonial-card">
+          <img src="../resources/homeLogoCrop.gif" alt="Client" />
+          <p>
+            "Reviews and feedback from happy clients are a great way to build
+            trust." <br /><i>Linda, 28</i>
+          </p>
+        </div>
+        <div class="card testimonial-card">
+          <img src="../resources/homeLogoCrop.gif" alt="Client" />
+          <p>
+            "Reviews and feedback from happy clients are a great way to build
+            trust." <br /><i>Dima, 45</i>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>GET IN TOUCH TODAY</h2>
+      <div class="contact-image-wrapper">
+        <img
+          src="../resources/IrinaLink2.jpg"
+          alt="Irina with barbell"
+          class="contact-img"
+        />
+      </div>
+      <div class="contact-info">
+        <div><strong>EMAIL ADDRESS</strong><br />hello@gmail.com</div>
+        <div><strong>PHONE NUMBER</strong><br />+371 2345678</div>
+      </div>
+    </section>
   </body>
 </html>
