@@ -21,7 +21,7 @@ input[type="number"] {
 }
 
 input::placeholder {
-  color: #aaa;
+  color: white !important;
 }
 
 input[type="radio"] {
@@ -51,5 +51,12 @@ textarea {
 }
 
 textarea::placeholder {
-  color: #aaa;
+  color: white !important;
+}
+
+input.form-control,
+textarea.form-control {
+  background-color: #222 !important;
+  color: white !important;
+  border: 1px solid #555;
 }

@@ -72,6 +72,10 @@ section {
 .offerings,
 .testimonials {
   display: flex;
+  /* flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center; */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 4rem;
   margin-top: 2rem;

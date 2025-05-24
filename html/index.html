@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../css/common.css" />
     <title>TrainerApp</title>
   </head>
@@ -17,8 +22,8 @@
         <a href="index.html">IRINA KOZLOVA</a>
       </div>
       <div class="auth-buttons">
-        <button>LOGIN</button>
-        <button>REGISTER</button>
+        <a href="login.html"><button>LOGIN</button></a>
+        <a href="registration.html"><button>REGISTER</button></a>
       </div>
     </header>
 
@@ -62,7 +67,10 @@
       <h2 class="section-title">What Do I Offer</h2>
       <p>I am committed to bringing you the best workout experience.</p>
       <div class="offerings">
-        <a href="offerings.html" class="card link-card">
+        <a
+          onclick="showOverlay('One-on-one sessions tailored to your fitness level and goals.')"
+          class="card link-card"
+        >
           <img src="../resources/IrinaLink1.jpg" alt="Personal Training" />
           <h3>Personal Training</h3>
         </a>
@@ -118,5 +126,29 @@
         <div><strong>PHONE NUMBER</strong><br />+371 2345678</div>
       </div>
     </section>
+    <div
+      id="overlay"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+        color: white;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      "
+    >
+      <div>
+        <p id="overlay-text"></p>
+        <button onclick="hideOverlay()" class="btn btn-light mt-3">
+          Close
+        </button>
+      </div>
+    </div>
+    <script src="../js/trainerapp.js"></script>
   </body>
 </html>
